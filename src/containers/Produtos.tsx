@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux'
-import { Produto as ProdutoType } from '../App'
-import Produto from '../components/Produto'
-
-import * as S from './styles'
 import { RootReducer } from '../store'
 import { useGetProdutosQuery } from '../services/api'
+import { Produto as ProdutoType } from '../App'
+
+import Produto from '../components/Produto'
+import * as S from './styles'
 
 const ProdutosComponent = () => {
   const { data: produto, isLoading } = useGetProdutosQuery()
